@@ -30,6 +30,12 @@
 
     </audio>
     <script>
+        // mp3
+        document.addEventListener('click', () => {
+            const audio = document.getElementById('audio');
+            audio.muted = false;
+            audio.play();
+        }, { once: true });
         /*
        * Settings
        */
